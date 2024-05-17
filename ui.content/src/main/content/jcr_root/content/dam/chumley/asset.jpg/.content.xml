@@ -8,14 +8,14 @@
         cq:name="asset.jpg"
         cq:parentPath="/content/dam/chumley"
         dam:assetState="processed"
-        jcr:lastModified="{Date}2024-05-15T21:07:33.678Z"
+        jcr:lastModified="{Date}2024-05-17T13:53:39.818Z"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}24"
             dam:ColorSpace="{Long}-1"
             dam:ExifOffset="{Long}232"
-            dam:extracted="{Date}2024-05-15T21:07:33.276Z"
+            dam:extracted="{Date}2024-05-17T13:53:39.467Z"
             dam:Fileformat="JPEG"
             dam:JpgFromRawLength="{Long}988"
             dam:JpgFromRawStart="{Long}382"

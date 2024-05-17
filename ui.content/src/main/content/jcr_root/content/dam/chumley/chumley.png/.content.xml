@@ -5,13 +5,13 @@
     jcr:uuid="2ea82c04-8cb9-4ca6-be86-bf370e9e87c8">
     <jcr:content
         dam:assetState="processed"
-        jcr:lastModified="{Date}2024-05-15T21:09:09.642Z"
+        jcr:lastModified="{Date}2024-05-17T13:53:39.328Z"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
             dam:Bitsperpixel="{Long}32"
             dam:Comments="XML:com.adobe.xmp: &lt;?xpacket begin=&quot;﻿&quot; id=&quot;W5M0MpCehiHzreSzNTczkc9d&quot;?> &lt;x:xmpmeta xmlns:x=&quot;adobe:ns:meta/&quot; x:xmptk=&quot;Adobe XMP Core 9.1-c002 79.dba3da3b5, 2023/12/15-10:42:37        &quot;> &lt;rdf:RDF xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;> &lt;rdf:Description rdf:about=&quot;&quot; xmlns:xmp=&quot;http://ns.adobe.com/xap/1.0/&quot; xmlns:tiff=&quot;http://ns.adobe.com/tiff/1.0/&quot; xmlns:dc=&quot;http://purl.org/dc/elements/1.1/&quot; xmlns:photoshop=&quot;http://ns.adobe.com/photoshop/1.0/&quot; xmlns:xmpMM=&quot;http://ns.adobe.com/xap/1.0/mm/&quot; xmlns:stEvt=&quot;http://ns.adobe.com/xap/1.0/sType/ResourceEvent#&quot; xmp:CreatorTool=&quot;Adobe ImageReady&quot; xmp:CreateDate=&quot;2024-05-02T17:13:58-04:00&quot; xmp:ModifyDate=&quot;2024-05-02T17:24:50-04:00&quot; xmp:MetadataDate=&quot;2024-05-02T17:24:50-04:00&quot; tiff:Orientation=&quot;1&quot; dc:format=&quot;image/png&quot; photoshop:ColorMode=&quot;3&quot; xmpMM:InstanceID=&quot;xmp.iid:d3e068f0-fb51-405e-b5aa-064605d93702&quot; xmpMM:DocumentID=&quot;xmp.did:d3e068f0-fb51-405e-b5aa-064605d93702&quot; xmpMM:OriginalDocumentID=&quot;xmp.did:d3e068f0-fb51-405e-b5aa-064605d93702&quot;> &lt;xmpMM:History> &lt;rdf:Seq> &lt;rdf:li stEvt:action=&quot;saved&quot; stEvt:instanceID=&quot;xmp.iid:d3e068f0-fb51-405e-b5aa-064605d93702&quot; stEvt:when=&quot;2024-05-02T17:24:50-04:00&quot; stEvt:softwareAgent=&quot;Adobe Photoshop 25.7 (Macintosh)&quot; stEvt:changed=&quot;/&quot;/> &lt;/rdf:Seq> &lt;/xmpMM:History> &lt;/rdf:Description> &lt;/rdf:RDF> &lt;/x:xmpmeta> &lt;?xpacket end=&quot;r&quot;?>&#xa;"
-            dam:extracted="{Date}2024-05-15T21:09:09.526Z"
+            dam:extracted="{Date}2024-05-17T13:53:38.957Z"
             dam:Fileformat="PNG"
             dam:MIMEtype="image/png"
             dam:Numberofimages="{Long}1"

@@ -7,12 +7,12 @@
     <jcr:content
         cq:name="about-chumley"
         cq:parentPath="/content/dam/chumley"
-        jcr:lastModified="{Date}2023-12-04T20:42:25.861Z"
+        jcr:lastModified="{Date}2024-05-17T13:59:04.827Z"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent"
         jcr:title="About Chumley"
         contentFragment="{Boolean}true"
-        lastFragmentSave="{Date}2023-12-04T20:42:25.861Z">
+        lastFragmentSave="{Date}2024-05-17T13:59:04.827Z">
         <data
             cq:model="/conf/chumley/settings/dam/cfm/models/about"
             jcr:primaryType="nt:unstructured"
@@ -41,11 +41,13 @@
                 heading="Hi, I am Chumley!"
                 heading_x0040_ContentType="text/html"
                 heading_x0040_LastModified="{Date}2023-12-04T20:40:46.372Z"
-                image="/content/dam/chumley/user.cc753810.png"
-                image_x0040_LastModified="{Date}2023-12-04T20:40:46.372Z"
-                quote="&lt;p>&amp;quot;No one is perfect - that’s why pencils have erasers.&amp;quot;&lt;br>&#xa;&lt;b>Wolfgang Riebe&lt;br>&#xa;Keynote Speaker/Magician&lt;/b>&lt;/p>&#xa;"
+                image="/content/dam/chumley/chumley.png"
+                image_x0040_LastModified="{Date}2024-05-17T13:59:04.647Z"
+                image_x0040_LastModifiedBy="admin"
+                quote="&lt;p>&amp;quot;No one is perfect - that’s why pencils have erasers.&amp;quot;&lt;br>&#xa;&lt;b>Wolfgang Riebe&lt;br>&#xa; Keynote Speaker/Magician&lt;/b>&lt;/p>&#xa;"
                 quote_x0040_ContentType="text/html"
-                quote_x0040_LastModified="{Date}2023-12-04T20:42:10.727Z"/>
+                quote_x0040_LastModified="{Date}2024-05-17T13:59:04.649Z"
+                quote_x0040_LastModifiedBy="admin"/>
         </data>
         <indexedData jcr:primaryType="nt:unstructured">
             <master
@@ -64,7 +66,7 @@
                 _x0040_string_x0040_model="/conf/chumley/settings/dam/cfm/models/about"
                 string_x0040_copy="&lt;p>Hello everybody. I’m Chumley, a handsome React application created by Shannon Sumner.&lt;br>&#xa;Chumley is a really simple application to showcase my skills in a cute &amp;amp; clean way.&lt;/p>&#xa;"
                 string_x0040_heading="Hi, I am Chumley!"
-                string_x0040_quote="&lt;p>&amp;quot;No one is perfect - that’s why pencils have erasers.&amp;quot;&lt;br>&#xa;&lt;b>Wolfgang Riebe&lt;br>&#xa;Keynote Speaker/Magician&lt;/b>&lt;/p>&#xa;"/>
+                string_x0040_quote="&lt;p>&amp;quot;No one is perfect - that’s why pencils have erasers.&amp;quot;&lt;br>&#xa;&lt;b>Wolfgang Riebe&lt;br>&#xa; Keynote Speaker/Magician&lt;/b>&lt;/p>&#xa;"/>
         </indexedData>
         <metadata
             jcr:mixinTypes="[cq:Taggable]"

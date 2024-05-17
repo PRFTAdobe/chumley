@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:primaryType="rep:ACL">
+    <deny
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="everyone"
+        rep:privileges="{Name}[jcr:all]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:glob="/*"/>
+    </deny>
+    <allow1
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="dam-users"
+        rep:privileges="{Name}[jcr:read,rep:write]"/>
+    <deny2
+        jcr:primaryType="rep:DenyACE"
+        rep:principalName="everyone"
+        rep:privileges="{Name}[jcr:removeNode]">
+        <rep:restrictions
+            jcr:primaryType="rep:Restrictions"
+            rep:current="[]"/>
+    </deny2>
+    <allow3
+        jcr:primaryType="rep:GrantACE"
+        rep:principalName="reference-adjustment-service"
+        rep:privileges="{Name}[jcr:read,jcr:modifyProperties]"/>
+</jcr:root>
