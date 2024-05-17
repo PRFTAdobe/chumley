@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="24b88154-c91a-4220-a3d1-9c41e64c9984">
+    <jcr:content
+        cq:name="about-chumley"
+        cq:parentPath="/content/dam/chumley"
+        jcr:lastModified="{Date}2023-12-04T20:42:25.861Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="About Chumley"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2023-12-04T20:42:25.861Z">
+        <data
+            cq:model="/conf/chumley/settings/dam/cfm/models/about"
+            jcr:primaryType="nt:unstructured"
+            _strucVersion="{Long}1">
+            <master
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                copy="&lt;p>Hello everybody. I’m Chumley, a handsome React application created by Shannon Sumner.&lt;br>&#xa;Chumley is a really simple application to showcase my skills in a cute &amp;amp; clean way.&lt;/p>&#xa;"
+                copy_x0040_ContentType="text/html"
+                copy_x0040_LastModified="{Date}2023-12-04T20:42:25.840Z"
+                heading="About Chumley!"
+                heading_x0040_ContentType="text/html"
+                heading_x0040_LastModified="{Date}2023-12-04T20:40:12.135Z"
+                image="/content/dam/chumley/user.cc753810.png"
+                image_x0040_LastModified="{Date}2023-12-04T20:40:12.134Z"
+                quote="&lt;p>&amp;quot;No one is perfect - that’s why pencils have erasers.&amp;quot;&lt;br>&#xa;&lt;b>Wolfgang Riebe&lt;br>&#xa;Keynote Speaker/Magician&lt;/b>&lt;/p>&#xa;"
+                quote_x0040_ContentType="text/html"
+                quote_x0040_LastModified="{Date}2023-12-04T20:42:25.841Z"/>
+            <home_page
+                jcr:mixinTypes="[cq:Taggable,dam:cfVariationNode]"
+                jcr:primaryType="nt:unstructured"
+                _x0040_variationCreationDate="{Date}2023-12-01T21:15:47.582Z"
+                copy="&lt;p>Hello everybody. I’m Chumley, a handsome React application created by Shannon Sumner.&lt;br>&#xa;Chumley is a really simple application to showcase my skills in a cute &amp;amp; clean way.&lt;/p>&#xa;"
+                copy_x0040_ContentType="text/html"
+                copy_x0040_LastModified="{Date}2023-12-04T20:42:10.726Z"
+                heading="Hi, I am Chumley!"
+                heading_x0040_ContentType="text/html"
+                heading_x0040_LastModified="{Date}2023-12-04T20:40:46.372Z"
+                image="/content/dam/chumley/user.cc753810.png"
+                image_x0040_LastModified="{Date}2023-12-04T20:40:46.372Z"
+                quote="&lt;p>&amp;quot;No one is perfect - that’s why pencils have erasers.&amp;quot;&lt;br>&#xa;&lt;b>Wolfgang Riebe&lt;br>&#xa;Keynote Speaker/Magician&lt;/b>&lt;/p>&#xa;"
+                quote_x0040_ContentType="text/html"
+                quote_x0040_LastModified="{Date}2023-12-04T20:42:10.727Z"/>
+        </data>
+        <indexedData jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[dam:IndexedFragmentData]"
+                jcr:primaryType="nt:unstructured"
+                jcr:uuid="c7549ae4-a101-4616-8eae-9ecd981873c7"
+                _x0040_string_x0040_model="/conf/chumley/settings/dam/cfm/models/about"
+                _x0040_stringArray_x0040_variations="[home_page]"
+                string_x0040_copy="&lt;p>Hello everybody. I’m Chumley, a handsome React application created by Shannon Sumner.&lt;br>&#xa;Chumley is a really simple application to showcase my skills in a cute &amp;amp; clean way.&lt;/p>&#xa;"
+                string_x0040_heading="About Chumley!"
+                string_x0040_quote="&lt;p>&amp;quot;No one is perfect - that’s why pencils have erasers.&amp;quot;&lt;br>&#xa;&lt;b>Wolfgang Riebe&lt;br>&#xa;Keynote Speaker/Magician&lt;/b>&lt;/p>&#xa;"/>
+            <home_page
+                jcr:mixinTypes="[dam:IndexedFragmentData]"
+                jcr:primaryType="nt:unstructured"
+                jcr:uuid="4351046a-6653-487a-bb66-189b66eed4f6"
+                _x0040_string_x0040_model="/conf/chumley/settings/dam/cfm/models/about"
+                string_x0040_copy="&lt;p>Hello everybody. I’m Chumley, a handsome React application created by Shannon Sumner.&lt;br>&#xa;Chumley is a really simple application to showcase my skills in a cute &amp;amp; clean way.&lt;/p>&#xa;"
+                string_x0040_heading="Hi, I am Chumley!"
+                string_x0040_quote="&lt;p>&amp;quot;No one is perfect - that’s why pencils have erasers.&amp;quot;&lt;br>&#xa;&lt;b>Wolfgang Riebe&lt;br>&#xa;Keynote Speaker/Magician&lt;/b>&lt;/p>&#xa;"/>
+        </indexedData>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured">
+            <dam:cfVariations jcr:primaryType="nt:unstructured">
+                <home_page
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"/>
+            </dam:cfVariations>
+        </metadata>
+        <model jcr:primaryType="nt:unstructured">
+            <variations jcr:primaryType="nt:unstructured">
+                <home_page
+                    jcr:description="\0"
+                    jcr:mixinTypes="[cq:Taggable]"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Home Page"
+                    name="home_page">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        synchronizeWithVersion="[heading:1ea09022-33ed-46d6-8e5f-988fe59bae31,copy:1ea09022-33ed-46d6-8e5f-988fe59bae31,quote:1ea09022-33ed-46d6-8e5f-988fe59bae31]"/>
+                </home_page>
+            </variations>
+        </model>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

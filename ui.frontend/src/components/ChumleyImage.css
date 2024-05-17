@@ -1,0 +1,58 @@
+:root {
+  --asset-max-inline-size: none;
+}
+
+.chumley-image .chumley-image__image {
+  inline-size: auto;
+  margin-inline: auto;
+  max-inline-size: 100%;
+}
+
+.chumley-image .cmp-asset {
+  block-size: auto;
+  display: block;
+  inline-size: 100%;
+  max-inline-size: var(--asset-max-inline-size);
+  object-fit: cover;
+}
+
+.chumley-image__link {
+  display: grid;
+  justify-content: center;
+  padding-block: var(--chumley-size-2x);
+}
+
+.chumley-image__link .chumley-image__image,
+.chumley-image__overlay {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.chumley-image__link figcaption.chumley-image__title {
+  font-size: 16px;
+  grid-area: 2 / 1 / 3 / 2;
+  line-height: 1.75;
+  margin-block: 0 var(--chumley-size-3x);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.chumley-image__overlay {
+  align-items: center;
+  background-color: var(--color-light-sea-green);
+  block-size: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  inline-size: 100%;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.chumley-image__overlay svg {
+  block-size: var(--chumley-size-8x);
+  inline-size: var(--chumley-size-8x);
+}
+
+.chumley-image__link:hover .chumley-image__overlay {
+  opacity: 0.9;
+}

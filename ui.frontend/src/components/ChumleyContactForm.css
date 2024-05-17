@@ -1,0 +1,38 @@
+.chumley-form {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column;
+  gap: var(--chumley-size-4x);
+  inline-size: 100%;
+  justify-content: stretch;
+}
+
+.chumley-form__field {
+  inline-size: 100%;
+}
+
+.chumley-form__control {
+  background-color: var(--color-white);
+  background-image: none;
+  border: 1px solid var(--color-chinese-silver);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  box-sizing: border-box;
+  color: var(--color-davys-grey);
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  inline-size: 100%;
+  padding-block: var(--chumley-size-1x) var(--chumley-size-1x);
+  padding-inline: calc(var(--chumley-size-1x) + var(--chumley-size-half)) calc(var(--chumley-size-1x) + var(--chumley-size-half));
+}
+
+.chumley-form__control--invalid {
+  border-color: var(--color-rusty-red);
+}
+
+.chumley-form__feedback {
+  color: var(--color-rusty-red);
+  font-size: 80%;
+  margin-block-start: var(--chumley-size-half);
+}

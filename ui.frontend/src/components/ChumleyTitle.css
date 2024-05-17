@@ -1,0 +1,14 @@
+.chumley-title {
+  border-block-end: 1px solid var(--color-chinese-silver);
+  margin-block-end: var(--chumley-size-2x);
+  padding-block-start: var(--chumley-size-2x);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .chumley-title {
+    inline-size: 50%;
+    margin-inline: auto;
+    min-inline-size: 400px;
+  }
+}

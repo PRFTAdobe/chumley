@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="72ae9615-afeb-42a2-9262-42da147764da">
+    <jcr:content
+        dam:assetState="processed"
+        jcr:lastModified="{Date}2024-05-15T21:07:33.124Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent">
+        <metadata
+            dam:Bitsperpixel="{Long}24"
+            dam:extracted="{Date}2024-05-15T21:07:31.776Z"
+            dam:Fileformat="JPEG"
+            dam:MIMEtype="image/jpeg"
+            dam:Numberofimages="{Long}1"
+            dam:Numberoftextualcomments="{Long}0"
+            dam:Physicalheightindpi="{Long}72"
+            dam:Physicalheightininches="{Decimal}7.06944465637207"
+            dam:Physicalwidthindpi="{Long}72"
+            dam:Physicalwidthininches="{Decimal}11.80555534362793"
+            dam:Progressive="no"
+            dam:sha1="d2b4802bbdb79f69061acd6b34a207360de1799f"
+            dam:size="{Long}82989"
+            dc:description="Lava flowing into the ocean"
+            dc:format="image/jpeg"
+            dc:modified="{Date}2019-02-19T22:05:12.160+01:00"
+            dc:title="Lava flowing into the ocean"
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"
+            jcr:title="Lava flowing into the ocean"
+            tiff:ImageLength="{Long}509"
+            tiff:ImageWidth="{Long}850"
+            tiff:ResolutionUnit="{Long}2"
+            tiff:XResolution="72/1"
+            tiff:YResolution="72/1"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

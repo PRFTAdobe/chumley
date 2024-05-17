@@ -1,0 +1,43 @@
+:root {
+  --container-background-color: transparent;
+  --container-border-color: transparent;
+  --container-block-padding: 0;
+}
+
+.chumley-container {
+  clear: both;
+  padding-block: var(--container-block-padding);
+  position: relative;
+}
+
+.chumley-container::before {
+  background-color: var(--container-background-color);
+  border-block-end: 1px solid var(--container-border-color);
+  content: '';
+  inline-size: 100vw;
+  inset-block: 0;
+  inset-inline: 50%;
+  margin-inline: -50vw;
+  position: absolute;
+  z-index: -1;
+}
+
+.chumley-container:not(.chumley-container--with-gap) > .aem-Grid {
+  inline-size: 100%;
+  margin-inline: 0;
+}
+
+.chumley-container.chumley-container--with-gap > .aem-Grid {
+  inline-size: calc(100% + var(--chumley-size-4x));
+  margin-inline: calc(-1 * var(--chumley-size-2x));
+}
+
+.chumley-container--with-gap > .aem-Grid > .aem-GridColumn {
+  padding-inline: var(--chumley-size-2x);
+}
+
+.chumley-container:not(.chumley-container--with-gap)
+> .aem-Grid
+> .aem-GridColumn {
+  padding-inline: 0;
+}

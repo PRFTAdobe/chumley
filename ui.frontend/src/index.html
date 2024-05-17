@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="#000000" name="theme-color" />
+  <meta content="Chumley" name="description" />
+  <link href="./favicon.ico" rel="icon" />
+  <link href="./logo192.png" rel="apple-touch-icon" />
+  <link href="./manifest.json" rel="manifest" />
+  <title>Chumley</title>
+  <meta
+    content="/content/chumley/us/en.model.json"
+    property="cq:pagemodel_root_url"
+  />
+
+  <!-- AEM Base ClientLib -->
+  <link
+    href="/etc.clientlibs/chumley/clientlibs/clientlib-base.css"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+  <script>
+    window.environment = 'development';
+    if (location.pathname === '/') {
+      location.href =
+        '/content/chumley/us/en/home.html';
+    }
+  </script>
+</head>
+<body>
+<div id="root"></div>
+<script src="./main.tsx" type="module"></script>
+</body>
+</html>

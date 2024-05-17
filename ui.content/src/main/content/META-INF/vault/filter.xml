@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/chumley" mode="merge"/>
+    <filter root="/content/chumley" mode="merge"/>
+    <filter root="/content/dam/chumley" mode="merge">
+        <exclude pattern="/content/dam/chumley(/.*)?"/>
+        <include pattern="/content/dam/chumley/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/chumley/asset.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/chumley.png" mode="merge"/>
+    <filter root="/content/dam/chumley/ape.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/chiefs.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/emperors.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/force.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/raiders-full.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/raiders.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/rebels-full.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/vikings.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/wampas-full.jpg" mode="merge"/>
+    <filter root="/content/dam/chumley/lava-into-ocean.jpg" mode="merge" />
+    <filter root="/content/dam/chumley/about-chumley" mode="merge"/>
+    <filter root="/content/experience-fragments/chumley" mode="merge"/>
+</workspaceFilter>

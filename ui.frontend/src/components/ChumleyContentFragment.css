@@ -1,0 +1,12 @@
+.chumley-content-fragment__image {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-block-end: var(--chumley-size-1x);
+}
+
+.chumley-content-fragment__heading,
+.chumley-content-fragment__copy,
+.chumley-content-fragment__quote {
+  text-align: center;
+}

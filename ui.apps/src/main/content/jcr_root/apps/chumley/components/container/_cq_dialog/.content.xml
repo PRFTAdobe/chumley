@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Container"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[core.wcm.components.container.v1.editor]"
+          helpPath="https://www.adobe.com/go/aem_cmp_container_v1"
+          trackingFeature="core-components:container:v1">
+    <content
+        granite:class="cmp-container__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <addGapBetweenComponents
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="false"
+                                                name="./addGapBetweenComponents"
+                                                text="Add a gap between components"
+                                                uncheckedValue="false"
+                                                value="{Boolean}true">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="responsiveGrid"/>
+                                            </addGapBetweenComponents>
+                                            <blockPadding
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Block Padding"
+                                                name="./blockPadding">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <zero
+                                                        jcr:primaryType="nt:unstructured"
+                                                        selected="{Boolean}true"
+                                                        text="0 pixels"
+                                                        value="0x"/>
+                                                    <eight
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="8 pixels"
+                                                        value="1x"/>
+                                                    <sixteen
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="16 pixels"
+                                                        value="2x"/>
+                                                    <twentyFour
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="24 pixels"
+                                                        value="3x"/>
+                                                    <thirtyTwo
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="32 pixels"
+                                                        value="4x"/>
+                                                    <forty
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="40 pixels"
+                                                        value="5x"/>
+                                                    <fortyEight
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="48 pixels"
+                                                        value="6x"/>
+                                                    <fiftySix
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="56 pixels"
+                                                        value="7x"/>
+                                                    <sixtyFour
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="64 pixels"
+                                                        value="8x"/>
+                                                    <seventyTwo
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="72 pixels"
+                                                        value="9x"/>
+                                                    <eighty
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="80 pixels"
+                                                        value="10x"/>
+                                                </items>
+                                            </blockPadding>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <cq:styles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

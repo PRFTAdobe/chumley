@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-05-16T17:08:05.033Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/chumley/settings/wcm/templates/spa-app-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="English"
+        sling:resourceType="chumley/components/spa"
+        pageTitle="Chumley">
+        <image
+            jcr:lastModified="{Date}2024-05-16T17:08:05.007Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            imageRotate="0"/>
+    </jcr:content>
+    <home/>
+    <work/>
+    <about/>
+    <components/>
+    <contact/>
+</jcr:root>

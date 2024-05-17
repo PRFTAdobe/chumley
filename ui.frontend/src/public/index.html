@@ -1,0 +1,36 @@
+<!-- This file is only used during development -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta content="#000000" name="theme-color" />
+  <meta content="Chumley" name="description" />
+  <link href="/favicon.ico" rel="icon" />
+  <link href="/resources/logo192.png" rel="apple-touch-icon" />
+  <link href="%PUBLIC_URL%/manifest.json" rel="manifest" />
+  <!-- AEM page model -->
+  <meta
+    content="/content/chumley/us/en.model.json"
+    property="cq:pagemodel_root_url"
+  />
+  <!-- AEM Base ClientLib -->
+  <link href="/etc.clientlibs/chumley/clientlibs/clientlib-base.css" rel="stylesheet" type="text/css" />
+
+  <title>Chumley</title>
+
+  <!-- In development mode, redirect from "/" to app root -->
+  <script>
+    window.environment = 'development';
+    if (location.pathname === '/') {
+      location.href =
+        '/content/chumley/us/en/home.html';
+    }
+  </script>
+</head>
+<body class="page basicpage">
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="spa-root"></div>
+</body>
+</html>

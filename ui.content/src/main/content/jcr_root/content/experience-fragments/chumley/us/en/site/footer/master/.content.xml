@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2024-05-15T20:00:13.943Z"
+        cq:lastModifiedBy="admin"
+        cq:tags="[]"
+        cq:template="/conf/chumley/settings/wcm/templates/xf-web-variation"
+        cq:xfMasterVariation="{Boolean}true"
+        cq:xfVariantType="web"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Footer"
+        sling:resourceType="chumley/components/xfpage">
+        <root
+            jcr:lastModified="{Date}2024-05-15T19:58:21.695Z"
+            jcr:lastModifiedBy="admin"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="chumley/components/container"
+            addGapBetweenComponents="true"
+            backgroundColor="#2f2f2f"
+            blockPadding="6x"
+            layout="responsiveGrid">
+            <text
+                jcr:lastModified="{Date}2024-05-15T19:59:10.792Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="chumley/components/text"
+                text="&lt;h4>MY BUNKER&lt;/h4>&#xd;&#xa;&lt;p>172 Largess Lane,&lt;br>&#xd;&#xa;Piedmont, South Carolina 29673&lt;br>&#xd;&#xa;(864) 310-5885&lt;/p>&#xd;&#xa;"
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                    <tablet
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                    <phone
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                    <smallScreen
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </text>
+            <text_copy
+                jcr:lastModified="{Date}2024-05-15T19:59:40.765Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="chumley/components/text"
+                text="&lt;h4>MY LINKS&lt;/h4>&#xd;&#xa;&lt;p>&lt;a href=&quot;https://twitter.com/shannonsumner&quot;>Twitter&lt;/a>&lt;br>&#xd;&#xa;&lt;a href=&quot;https://www.facebook.com/shannon.sumner.31/&quot;>Facebook&lt;/a>&lt;/p>&#xd;&#xa;"
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                    <tablet
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                    <phone
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                    <smallScreen
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </text_copy>
+            <text_copy_copy
+                jcr:lastModified="{Date}2024-05-15T20:00:13.852Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="chumley/components/text"
+                text="&lt;h4>ABOUT CHUMLEY&lt;/h4>&#xd;&#xa;&lt;p>This cute theme was created to showcase your work. Use it wisely.&lt;/p>&#xd;&#xa;"
+                textIsRich="true">
+                <cq:responsive jcr:primaryType="nt:unstructured">
+                    <default
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="4"/>
+                    <tablet
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                    <phone
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                    <smallScreen
+                        jcr:primaryType="nt:unstructured"
+                        offset="0"
+                        width="12"/>
+                </cq:responsive>
+            </text_copy_copy>
+        </root>
+    </jcr:content>
+</jcr:root>

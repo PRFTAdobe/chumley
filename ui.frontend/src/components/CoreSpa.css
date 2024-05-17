@@ -1,0 +1,245 @@
+:root {
+  --accordion-heading-color: #7b7b7b;
+}
+
+.cmp-accordion {
+  display: block;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.cmp-accordion__title {
+  font-size: inherit;
+  font-style: normal;
+}
+
+.cmp-accordion__header {
+  font: inherit;
+  margin-block: var(--chumley-size-1x);
+}
+
+.cmp-accordion__button {
+  align-items: center;
+  appearance: none;
+  background: none;
+  border: none;
+  border-block-end: 1px solid currentcolor;
+  color: var(--accordion-heading-color);
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  font: inherit;
+  justify-content: space-between;
+  min-block-size: var(--chumley-size-5x);
+  padding-block: 0.5rem;
+  padding-inline: 0;
+  position: relative;
+}
+
+.cmp-accordion__button:hover {
+  --accordion-heading-color: #333;
+}
+
+.cmp-accordion__icon {
+  background-image: url("/resources/chevron_right--light-skin.svg");
+  block-size: 18px;
+  inline-size: 18px;
+}
+
+.cmp-accordion__button--expanded .cmp-accordion__icon {
+  background-image: url("/resources/expand_more--light-skin.svg");
+  transform: rotate(0deg);
+}
+
+.cmp-carousel__content {
+  position: relative;
+}
+
+.cmp-carousel__items {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  z-index: 0;
+}
+
+.cmp-carousel__item {
+  display: none;
+}
+
+.cmp-carousel__items .cmp-carousel__item {
+  display: block;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  z-index: -1;
+}
+
+.cmp-carousel__item--active {
+  display: block;
+}
+
+.cmp-carousel__items .cmp-carousel__item--active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.cmp-carousel__action {
+  appearance: none;
+  background-color: #f5f5f5;
+  block-size: 1.875rem;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  inline-size: 1.875rem;
+  line-height: 1.875rem;
+  padding-block: 0.375rem;
+  padding-inline: 0.375rem;
+}
+
+.cmp-carousel__action > .cmp-carousel__action-icon {
+  block-size: 16px;
+  display: block;
+  inline-size: 16px;
+}
+
+.cmp-carousel__action--next > .cmp-carousel__action-icon {
+  background-image: url("/resources/chevron-right.svg");
+}
+
+.cmp-carousel__action--pause > .cmp-carousel__action-icon {
+  background-image: url("/resources/pause.svg");
+}
+
+.cmp-carousel__action--play > .cmp-carousel__action-icon {
+  background-image: url("/resources/play.svg");
+}
+
+.cmp-carousel__action--previous > .cmp-carousel__action-icon {
+  background-image: url("/resources/chevron-left.svg");
+}
+
+.cmp-carousel__indicators {
+  align-items: center;
+  block-size: 1.875rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.cmp-carousel__indicator {
+  background-color: rgb(0 0 0 / 50%);
+  block-size: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  flex: 0 1 auto;
+  font-size: 0;
+  inline-size: 10px;
+  margin-block: 0;
+  margin-inline: 7px;
+  position: relative;
+  text-indent: -3000px;
+}
+
+.cmp-carousel__indicator--active {
+  background-clip: content-box;
+  background-color: rgb(0 0 0 / 80%);
+  block-size: 16px;
+  border: 2px solid #222;
+  inline-size: 16px;
+  padding-block: 2px;
+  padding-inline: 2px;
+}
+
+.cmp-carousel {
+  position: relative;
+}
+
+.cmp-carousel__actions {
+  display: flex;
+  flex-direction: row;
+  inset-block-end: 0;
+  inset-inline-end: 0;
+  position: absolute;
+}
+
+.cmp-carousel__action:first-child {
+  margin-inline-start: 0;
+}
+
+.cmp-carousel__action--disabled {
+  display: none;
+}
+
+.cmp-carousel__action--previous {
+  order: 1;
+}
+
+.cmp-carousel__action--next {
+  order: 4;
+}
+
+.cmp-carousel__action--pause {
+  order: 2;
+}
+
+.cmp-carousel__action--play {
+  order: 3;
+}
+
+.cmp-carousel__action-text {
+  display: none;
+}
+
+.cmp-carousel__action:hover {
+  background-color: #eee;
+}
+
+.cmp-carousel__item .cmp-asset {
+  max-inline-size: 100%;
+}
+
+.cmp-tabs__tablist {
+  border-block-end: 1px solid #eee;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.cmp-tabs__tab {
+  box-sizing: border-box;
+  color: #7b7b7b;
+  cursor: pointer;
+  padding-block: 8px;
+  padding-inline: 16px;
+}
+
+.cmp-tabs__tab--active {
+  border-block-end: 2px solid #222;
+  color: #222;
+  margin-block-end: -1px;
+}
+
+.cmp-tabs__tabpanel {
+  display: none;
+}
+
+.cmp-tabs__tabpanel--active {
+  display: block;
+}
+
+.cmp-tabs__tabpanel:focus {
+  outline: 0;
+}
+
+.cmp-tabs__tab:hover {
+  color: #222;
+}
