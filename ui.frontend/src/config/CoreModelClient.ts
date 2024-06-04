@@ -1,11 +1,13 @@
-import { ModelClient } from '@adobe/aem-spa-page-model-manager';
+import { AuthoringUtils, ModelClient } from '@adobe/aem-spa-page-model-manager';
 
-export default class LocalDevModelClient extends ModelClient {
-  private authorizationHeader: string;
+export default class CoreModelClient extends ModelClient {
+  private authorizationHeader?: string;
 
-  constructor(apiHost: string, authorizationHeader: string) {
+  constructor(apiHost?: string, authorizationHeader?: string) {
     super(apiHost);
-    this.authorizationHeader = authorizationHeader;
+    if (authorizationHeader) {
+      this.authorizationHeader = authorizationHeader;
+    }
   }
 
   fetch(modelPath: string) {
@@ -17,14 +19,22 @@ export default class LocalDevModelClient extends ModelClient {
 
     // Either the API host has been provided or we make an absolute request relative to the current host
     const apihostPrefix = this.apiHost ?? '';
-    const url = `${apihostPrefix}${modelPath}`;
+    let url = `${apihostPrefix}${modelPath}`;
+    if (!AuthoringUtils.isInEditor()) {
+      url = `${url}?wcmmode=disabled`;
+    }
 
-    return fetch(url, {
+    const requestInit: RequestInit = {
       credentials: 'same-origin',
-      headers: {
+    };
+
+    if (this.authorizationHeader) {
+      requestInit.headers = {
         Authorization: this.authorizationHeader,
-      },
-    })
+      };
+    }
+
+    return fetch(url, requestInit)
       .then((response) => {
         if (response.status >= 200 && response.status < 300) {
           return response.json();

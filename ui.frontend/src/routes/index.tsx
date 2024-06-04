@@ -1,18 +1,19 @@
-import React from 'react';
 import { Model } from '@adobe/aem-spa-page-model-manager';
-import { ComponentMapping, Utils } from '@adobe/aem-react-editable-components';
+import {
+  ComponentMapping,
+  Utils,
+  withComponentMappingContext,
+} from '@adobe/aem-react-editable-components';
 import '@/import-components';
-
-interface Route {
-  element?: React.ReactElement;
-  path?: string;
-}
+import CorePage, { CorePageProps } from '@/components/CorePage';
+import { useQuery } from '@tanstack/react-query';
+import { RouteObject } from 'react-router-dom';
 
 const createPageRoutes = (
   cqChildren: Record<string, Model>,
   componentMapping: typeof ComponentMapping,
 ) => {
-  const routes: Route[] = [];
+  const routes: RouteObject[] = [];
   if (cqChildren) {
     Object.keys(cqChildren).forEach((cqChild) => {
       const childProps = Utils.modelToProps(cqChildren[cqChild]) as Record<
@@ -33,5 +34,40 @@ const createPageRoutes = (
   }
   return routes;
 };
+const createDynamicPageRoutes = (
+  cqChildren: Record<string, Model>,
+  loader: (key: string) => Promise<Model>,
+) => {
+  const routes: RouteObject[] = [];
+  if (cqChildren) {
+    Object.keys(cqChildren).forEach((cqChild) => {
+      const childProps = Utils.modelToProps(cqChildren[cqChild]) as Record<
+        string,
+        unknown
+      >;
 
-export default createPageRoutes;
+      const CorePageWithComponentMappingContext =
+        withComponentMappingContext(CorePage);
+      const PageComponent = ({ cqPath }: { cqPath: string }) => {
+        const { data } = useQuery({ queryKey: [cqPath] }) as {
+          data: CorePageProps;
+        };
+        return (
+          <CorePageWithComponentMappingContext
+            {...Utils.modelToProps(data as Model)}
+          />
+        );
+      };
+
+      routes.push({
+        element: <PageComponent cqPath={childProps.cqPath as string} />,
+        loader: () => loader(childProps.cqPath as string),
+        path: childProps.route as string,
+        shouldRevalidate: () => false,
+      });
+    });
+  }
+  return routes;
+};
+
+export { createDynamicPageRoutes, createPageRoutes };

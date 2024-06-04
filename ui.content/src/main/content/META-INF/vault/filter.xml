@@ -2,10 +2,7 @@
 <workspaceFilter version="1.0">
     <filter root="/conf/chumley" mode="merge"/>
     <filter root="/content/chumley" mode="merge"/>
-    <filter root="/content/dam/chumley" mode="merge">
-        <exclude pattern="/content/dam/chumley(/.*)?"/>
-        <include pattern="/content/dam/chumley/jcr:content(/.*)?"/>
-    </filter>
+    <filter root="/content/dam/chumley" mode="merge" />
     <filter root="/content/dam/chumley/asset.jpg" mode="merge"/>
     <filter root="/content/dam/chumley/chumley.png" mode="merge"/>
     <filter root="/content/dam/chumley/ape.jpg" mode="merge"/>

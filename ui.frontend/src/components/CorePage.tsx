@@ -3,7 +3,7 @@ import { PageProperties } from '@adobe/aem-react-editable-components/dist/compon
 import { ContainerState } from '@adobe/aem-react-editable-components/dist/components/Container';
 import classNames from 'classnames';
 
-interface CorePageProps extends PageProperties {
+export interface CorePageProps extends PageProperties {
   cssClassNames: string;
   title?: string;
 }
@@ -23,6 +23,10 @@ class CorePage extends Page<CorePageProps, ContainerState> {
       `${this.props.cssClassNames || ''}`,
     );
     return attrs;
+  }
+
+  componentDidMount() {
+    window.scrollTo(0, 0);
   }
 
   componentDidUpdate(prevProps: CorePageProps) {
