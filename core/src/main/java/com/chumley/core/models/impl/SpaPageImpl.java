@@ -1,8 +1,8 @@
 package com.chumley.core.models.impl;
 
+import com.adobe.aem.spa.project.core.models.Page;
 import com.adobe.cq.export.json.ComponentExporter;
 import com.adobe.cq.export.json.ExporterConstants;
-import com.adobe.aem.spa.project.core.models.Page;
 import com.adobe.cq.export.json.hierarchy.HierarchyNodeExporter;
 import com.day.cq.search.PredicateGroup;
 import com.day.cq.search.Query;
@@ -37,6 +37,7 @@ import javax.annotation.PostConstruct;
 import javax.jcr.Session;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -55,6 +56,7 @@ public class SpaPageImpl implements Page {
   private static final String HTML_EXTENSION = ".html";
   private static final String LIMIT = "-1";
   private static final Logger LOG = LoggerFactory.getLogger(SpaPageImpl.class);
+  private static final String PAGE_PATH = "pagePath";
   private static final String PARAM_LIMIT = "p.limit";
   private static final String PATH = ":path";
   private static final String ROUTE = "route";
@@ -63,6 +65,7 @@ public class SpaPageImpl implements Page {
   @ScriptVariable
   private com.day.cq.wcm.api.Page currentPage;
   private String exportedType;
+  private boolean isDynamic = true;
   @Self
   @Via(type = ResourceSuperType.class)
   @Delegate(excludes = DelegationExclusion.class)
@@ -73,19 +76,21 @@ public class SpaPageImpl implements Page {
   private ResourceResolver resourceResolver;
   @Self
   private SlingHttpServletRequest slingHttpServletRequest;
-  private boolean isDynamic = true;
-
-  @JsonIgnore
-  public Map<String, ? extends Page> getExportedChildren()  {
-    return Collections.emptyMap();
-  }
 
   @JsonProperty(":children")
   public Map<String, ?> getChildren() {
     if (isDynamic) {
       return children;
     } else {
-      return page.getExportedChildren();
+      Map<String, ? extends HierarchyNodeExporter> exportedChildren = page.getExportedChildren();
+      String pagePath = slingHttpServletRequest.getParameter(PAGE_PATH);
+      if (null != pagePath && exportedChildren.containsKey(pagePath)) {
+        Map<String, Page> exportedChild = new LinkedHashMap<>();
+        exportedChild.put(pagePath, (Page) exportedChildren.get(pagePath));
+        return exportedChild;
+      } else {
+        return exportedChildren;
+      }
     }
   }
 
@@ -179,6 +184,12 @@ public class SpaPageImpl implements Page {
   @Override
   public @NotNull String getExportedType() {
     return exportedType;
+  }
+
+  @Override
+  @JsonIgnore
+  public Map<String, ? extends Page> getExportedChildren() {
+    return Collections.emptyMap();
   }
 
   public interface DelegationExclusion {

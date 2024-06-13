@@ -22,6 +22,8 @@ export default class CoreModelClient extends ModelClient {
     let url = `${apihostPrefix}${modelPath}`;
     if (!AuthoringUtils.isInEditor()) {
       url = `${url}?wcmmode=disabled`;
+    } else {
+      url = `${url}?pagePath=${window.location.pathname.replace(/\.[^/.]+$/, '')}`;
     }
 
     const requestInit: RequestInit = {
