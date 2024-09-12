@@ -41,7 +41,7 @@
                         displayMode="multi"
                         fragmentPath="/content/dam/chumley/about-chumley"
                         paragraphScope="all"
-                        text="About Chumley Image /content/dam/chumley/user.cc753810.png Heading About Chumley! Copy Hello everybody. I’m Chumley, a handsome React application created by Shannon Sumner. Chumley is a really simple application to showcase my skills in a cute &amp; clean way. Quote &quot;No one is perfect - that’s why pencils have erasers.&quot; Wolfgang Riebe Keynote Speaker/Magician"
+                        text="About Chumley Image /content/dam/chumley/chumley.png Heading About Chumley! Copy Hello everybody. I’m Chumley, a handsome React application created by Shannon Sumner. Chumley is a really simple application to showcase my skills in a cute &amp; clean way. Quote &quot;No one is perfect - that’s why pencils have erasers.&quot; Wolfgang Riebe Keynote Speaker/Magician"
                         variationName="master">
                         <cq:responsive jcr:primaryType="nt:unstructured">
                             <default

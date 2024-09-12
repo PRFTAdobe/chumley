@@ -47,7 +47,6 @@
   ],
   "rules": {
     "prefer-template": "error",
-    "react/jsx-sort-props": "error",
     "import/extensions": [
       2,
       "ignorePackages",
@@ -88,6 +87,9 @@
     "@typescript-eslint/no-empty-function": 0,
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-shadow": "off",
+    "sort-keys": 0,
+    "sort-keys/sort-keys-fix": 2,
+    "react/jsx-sort-props": "error",
     "react-refresh/only-export-components": [
       "warn",
       {
@@ -95,8 +97,6 @@
       }
     ],
     "react/jsx-props-no-spreading": "off",
-    "sort-keys": 0,
-    "sort-keys/sort-keys-fix": 2,
     "react/function-component-definition": [
       2,
       {

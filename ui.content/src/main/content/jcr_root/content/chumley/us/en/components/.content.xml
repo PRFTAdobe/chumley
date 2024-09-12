@@ -571,11 +571,11 @@
                             <par0
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="dam/cfm/components/grid">
-                                <user.cc753810-1701465553662
+                                <chumley
                                     jcr:lastModified="{Date}2023-12-04T20:15:13.119Z"
                                     jcr:primaryType="nt:unstructured"
                                     sling:resourceType="dam/cfm/components/mmimage"
-                                    cfmAssetRef="user.cc753810-1701465553662"
+                                    cfmAssetRef="chumley"
                                     cfmAssetType="image"
                                     cfmParagraph="{Long}0"
                                     fileReference="/content/dam/chumley/chumley.png"/>
