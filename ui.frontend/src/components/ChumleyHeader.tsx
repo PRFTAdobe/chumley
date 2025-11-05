@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
 import {
   CoreLink,
   CoreNavigation,
   NavigationItem,
   NavigationProps,
 } from 'aem-react-core-wcm-components-base';
+import React, { useEffect, useRef } from 'react';
 import './ChumleyHeader.css';
 import { AuthoringUtils } from '@adobe/aem-spa-page-model-manager';
 
@@ -69,7 +69,7 @@ const ChumleyHeader = ({
   }, []);
 
   return (
-    <div ref={headerRef} className={baseCssClass}>
+    <div className={baseCssClass} ref={headerRef}>
       <div className={`${baseCssClass}__logo-container`}>
         <CoreLink className={`${baseCssClass}__logo`} href={homePage}>
           {applicationName}

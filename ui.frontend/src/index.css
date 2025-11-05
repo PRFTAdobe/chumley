@@ -36,18 +36,20 @@
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-  url('/resources/fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
-  url('/resources/fonts/montserrat-v25-latin-regular.woff') format('woff');
+  src:
+    local(""),
+    url("/resources/fonts/montserrat-v25-latin-regular.woff2") format("woff2"),
+    url("/resources/fonts/montserrat-v25-latin-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-  url('/resources/fonts/montserrat-v25-latin-700.woff2') format('woff2'),
-  url('/resources/fonts/montserrat-v25-latin-700.woff') format('woff');
+  src:
+    local(""),
+    url("/resources/fonts/montserrat-v25-latin-700.woff2") format("woff2"),
+    url("/resources/fonts/montserrat-v25-latin-700.woff") format("woff");
 }
 
 * {
@@ -161,7 +163,6 @@ h4 {
   padding-inline: var(--chumley-size-3x) var(--chumley-size-3x);
 }
 
-
 @media (min-width: 768px) {
   .aem-page {
     inline-size: 750px;
@@ -179,7 +180,6 @@ h4 {
     inline-size: 1170px;
   }
 }
-
 
 .chumley-scrim-dark {
   --chumley-heading-color: var(--color-white);
@@ -204,12 +204,12 @@ footer h4 {
   min-block-size: var(--chumley-size-6x);
 }
 
-html:not([class*='aem-AuthorLayer-']) .aem-page > div > .aem-container {
+html:not([class*="aem-AuthorLayer-"]) .aem-page > div > .aem-container {
   display: grid;
   grid-template:
-        "header"
-        "main" 1fr
-        "footer" / 1fr;
+    "header"
+    "main" 1fr
+    "footer" / 1fr;
   min-block-size: 100vh;
 }
 

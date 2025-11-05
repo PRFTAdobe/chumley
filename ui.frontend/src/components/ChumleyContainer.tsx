@@ -1,11 +1,10 @@
-/* eslint-disable react/destructuring-assignment */
-import React from 'react';
-import classNames from 'classnames';
-import lightOrDark from '@/utils/lightOrDark';
 import {
   ContainerV1,
   ContainerV1Properties,
 } from '@adobe/aem-core-components-react-spa';
+import classNames from 'classnames';
+import React from 'react';
+import lightOrDark from '@/utils/lightOrDark';
 import './ChumleyContainer.css';
 
 interface ChumleyContainerProps extends Omit<ContainerV1Properties, 'layout'> {

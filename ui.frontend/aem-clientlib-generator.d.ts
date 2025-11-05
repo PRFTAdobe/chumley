@@ -1,1 +1,1 @@
-declare module 'aem-clientlib-generator';
+declare module 'aem-clientlib-generator'

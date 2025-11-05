@@ -1,6 +1,6 @@
 import { Page } from '@adobe/aem-react-editable-components';
-import { PageProperties } from '@adobe/aem-react-editable-components/dist/components/Page';
 import { ContainerState } from '@adobe/aem-react-editable-components/dist/components/Container';
+import { PageProperties } from '@adobe/aem-react-editable-components/dist/components/Page';
 import classNames from 'classnames';
 
 export interface CorePageProps extends PageProperties {

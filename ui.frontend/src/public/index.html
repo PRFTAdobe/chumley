@@ -23,8 +23,8 @@
   <!-- In development mode, redirect from "/" to app root -->
   <script>
     window.environment = 'development';
-    if (location.pathname === '/') {
-      location.href =
+    if (window.location.pathname === '/') {
+      window.location.href =
         '/content/chumley/us/en/home.html';
     }
   </script>

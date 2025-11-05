@@ -1,5 +1,5 @@
-import React from 'react';
 import { ButtonProps, CoreButton } from 'aem-react-core-wcm-components-base';
+import React from 'react';
 import './ChumleyButton.css';
 
 type ChumleyButtonProps = ButtonProps;

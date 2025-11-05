@@ -1,9 +1,9 @@
-import { createElement } from 'react';
 import { Container } from '@adobe/aem-react-editable-components';
 import {
   ContainerProperties,
   ContainerState,
 } from '@adobe/aem-react-editable-components/dist/components/Container';
+import { createElement } from 'react';
 import './CoreExperienceFragment.css';
 
 interface CoreExperienceFragmentProps extends ContainerProperties {

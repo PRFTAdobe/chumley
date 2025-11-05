@@ -12,7 +12,7 @@
   font-weight: normal;
   margin-block-end: 0;
   padding-block: var(--chumley-size-1x) var(--chumley-size-1x);
-  padding-inline: calc(var(--chumley-size-1x) + var(--chumley-size-half)) calc(var(--chumley-size-1x) + var(--chumley-size-half));
+  padding-inline: calc(var(--chumley-size-1x) + var(--chumley-size-half));
   text-align: center;
   user-select: none;
   vertical-align: middle;

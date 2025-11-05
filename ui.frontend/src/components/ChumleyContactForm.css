@@ -24,7 +24,7 @@
   font-size: 14px;
   inline-size: 100%;
   padding-block: var(--chumley-size-1x) var(--chumley-size-1x);
-  padding-inline: calc(var(--chumley-size-1x) + var(--chumley-size-half)) calc(var(--chumley-size-1x) + var(--chumley-size-half));
+  padding-inline: calc(var(--chumley-size-1x) + var(--chumley-size-half));
 }
 
 .chumley-form__control--invalid {

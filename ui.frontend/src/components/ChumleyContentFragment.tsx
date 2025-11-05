@@ -1,4 +1,3 @@
-/* eslint-disable react/no-danger,react/jsx-sort-props */
 import React from 'react';
 import './ChumleyContentFragment.css';
 
@@ -30,6 +29,7 @@ const ChumleyContentFragment = ({
           copy: (
             <div
               className={`${baseCssClass}__copy`}
+              // biome-ignore lint/security/noDangerouslySetInnerHtml: This is expected
               dangerouslySetInnerHTML={{ __html: elements.copy.value }}
               key={element}
             />
@@ -47,6 +47,7 @@ const ChumleyContentFragment = ({
           quote: (
             <div
               className={`${baseCssClass}__quote`}
+              // biome-ignore lint/security/noDangerouslySetInnerHtml: This is expected
               dangerouslySetInnerHTML={{ __html: elements.quote.value }}
               key={element}
             />

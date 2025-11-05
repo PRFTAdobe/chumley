@@ -1,13 +1,13 @@
-import { Model } from '@adobe/aem-spa-page-model-manager';
 import {
   ComponentMapping,
   Utils,
   withComponentMappingContext,
 } from '@adobe/aem-react-editable-components';
+import { Model } from '@adobe/aem-spa-page-model-manager';
 import '@/import-components';
-import CorePage, { CorePageProps } from '@/components/CorePage';
 import { useQuery } from '@tanstack/react-query';
 import { RouteObject } from 'react-router-dom';
+import CorePage, { CorePageProps } from '@/components/CorePage';
 
 const createPageRoutes = (
   cqChildren: Record<string, Model>,

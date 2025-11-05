@@ -106,7 +106,7 @@
 .chumley-navigation__group::before {
   background-color: var(--chumley-header-menu-border-color);
   block-size: 1px;
-  content: '';
+  content: "";
   inline-size: 100vw;
   inset-block: 0;
   inset-inline: 50%;

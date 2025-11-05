@@ -1,7 +1,7 @@
-import path from 'path';
-import { push } from 'aemsync';
+import { push } from 'aemsync'
+import path from 'path'
 
-const directoryName = process.cwd();
+const directoryName = process.cwd()
 const clientLibRoot = path.join(
   directoryName,
   '..',
@@ -13,14 +13,14 @@ const clientLibRoot = path.join(
   'apps',
   'chumley',
   'clientlibs',
-);
+)
 
 const aemSyncPush = async () => {
-  const args = { payload: [path.join(clientLibRoot, 'clientlib-react')] };
-  const result = (await push(args).next()).value;
-  console.log(result);
-};
+  const args = { payload: [path.join(clientLibRoot, 'clientlib-react')] }
+  const result = (await push(args).next()).value
+  console.log(result)
+}
 
 aemSyncPush().then(() => {
-  console.log('aem sync has finished');
-});
+  console.log('aem sync has finished')
+})

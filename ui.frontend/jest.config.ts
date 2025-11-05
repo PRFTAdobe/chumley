@@ -12,4 +12,4 @@ export default {
   },
   automock: false,
   setupFiles: ['./setupJest.ts'],
-};
+}

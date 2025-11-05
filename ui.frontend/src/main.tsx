@@ -1,23 +1,23 @@
 import {
+  ComponentMapping,
+  Constants,
+  Utils,
+} from '@adobe/aem-react-editable-components';
+import {
   AuthoringUtils,
   Model,
   ModelManager,
 } from '@adobe/aem-spa-page-model-manager';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { createRoot } from 'react-dom/client';
 import {
   createBrowserRouter,
   MemoryRouter,
   RouterProvider,
 } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import {
-  ComponentMapping,
-  Constants,
-  Utils,
-} from '@adobe/aem-react-editable-components';
+import App from '@/App';
 import CoreModelClient from '@/config/CoreModelClient';
 import { createDynamicPageRoutes, createPageRoutes } from '@/routes';
-import App from '@/App';
 import 'aem-react-core-wcm-components-base/dist/aem-react-core-wcm-components-base.css';
 import './components/CoreSpa.css';
 import './index.css';
@@ -55,7 +55,6 @@ const queryClient = new QueryClient({
   },
 });
 
-// eslint-disable-next-line @typescript-eslint/no-misused-promises
 document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById(containerId);
   const root = createRoot(container!);

@@ -1,17 +1,8 @@
 {
-  "extends": [
-    "stylelint-config-standard",
-    "stylelint-config-recommended"
-  ],
-  "plugins": [
-    "stylelint-use-logical",
-    "stylelint-order"
-  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-recommended"],
+  "plugins": ["stylelint-use-logical", "stylelint-order"],
   "rules": {
-    "order/order": [
-      "custom-properties",
-      "declarations"
-    ],
+    "order/order": ["custom-properties", "declarations"],
     "order/properties-alphabetical-order": true,
     "csstools/use-logical": "always",
     "media-feature-range-notation": null,

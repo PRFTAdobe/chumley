@@ -1,4 +1,23 @@
 import {
+  AccordionV1,
+  AccordionV1IsEmptyFn,
+  AccordionV1Properties,
+  CarouselV1,
+  CarouselV1IsEmptyFn,
+  CarouselV1Properties,
+  ContainerV1IsEmptyFn,
+  ContainerV1Properties,
+  ContentFragmentV1IsEmptyFn,
+  TabsV1,
+  TabsV1IsEmptyFn,
+  TabsV1Properties,
+} from '@adobe/aem-core-components-react-spa';
+import {
+  ContentFragmentV1,
+  ContentFragmentV1Properties,
+  MapToContentFragmentModel,
+} from '@adobe/aem-core-components-react-spa/dist/container/contentfragment/v1';
+import {
   EditConfig,
   MappedComponentProperties,
   MapTo,
@@ -27,37 +46,16 @@ import {
   TextEditConfig,
   TitleEditConfig,
 } from 'aem-react-core-wcm-components-base';
-
-import {
-  AccordionV1,
-  AccordionV1IsEmptyFn,
-  AccordionV1Properties,
-  CarouselV1,
-  CarouselV1IsEmptyFn,
-  CarouselV1Properties,
-  ContainerV1IsEmptyFn,
-  ContainerV1Properties,
-  ContentFragmentV1IsEmptyFn,
-  TabsV1,
-  TabsV1IsEmptyFn,
-  TabsV1Properties,
-} from '@adobe/aem-core-components-react-spa';
-
-import {
-  ContentFragmentV1,
-  ContentFragmentV1Properties,
-  MapToContentFragmentModel,
-} from '@adobe/aem-core-components-react-spa/dist/container/contentfragment/v1';
 import { ComponentType } from 'react';
-import CorePage from '@/components/CorePage';
-import ChumleyContainer from '@/components/ChumleyContainer';
-import CoreExperienceFragment from '@/components/CoreExperienceFragment';
-import ChumleyHeader from '@/components/ChumleyHeader';
-import ChumleyContentFragment from '@/components/ChumleyContentFragment';
-import ChumleyImage from '@/components/ChumleyImage';
-import ChumleyTitle from '@/components/ChumleyTitle';
 import ChumleyButton from '@/components/ChumleyButton';
 import ChumleyContactForm from '@/components/ChumleyContactForm';
+import ChumleyContainer from '@/components/ChumleyContainer';
+import ChumleyContentFragment from '@/components/ChumleyContentFragment';
+import ChumleyHeader from '@/components/ChumleyHeader';
+import ChumleyImage from '@/components/ChumleyImage';
+import ChumleyTitle from '@/components/ChumleyTitle';
+import CoreExperienceFragment from '@/components/CoreExperienceFragment';
+import CorePage from '@/components/CorePage';
 
 MapTo('chumley/components/breadcrumb')(
   CoreBreadCrumb as unknown as ComponentType<MappedComponentProperties>,

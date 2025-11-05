@@ -13,7 +13,7 @@
 .chumley-container::before {
   background-color: var(--container-background-color);
   border-block-end: 1px solid var(--container-border-color);
-  content: '';
+  content: "";
   inline-size: 100vw;
   inset-block: 0;
   inset-inline: 50%;
@@ -37,7 +37,7 @@
 }
 
 .chumley-container:not(.chumley-container--with-gap)
-> .aem-Grid
-> .aem-GridColumn {
+  > .aem-Grid
+  > .aem-GridColumn {
   padding-inline: 0;
 }

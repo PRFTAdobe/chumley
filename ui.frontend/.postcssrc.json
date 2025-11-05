@@ -11,11 +11,6 @@
         }
       ]
     },
-    "autoprefixer": {},
-    "postcss-logical": {
-      "blockDirection": "top-to-bottom",
-      "inlineDirection": "left-to-right"
-    },
-    "postcss-dir-pseudo-class": {}
+    "autoprefixer": {}
   }
 }

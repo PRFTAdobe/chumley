@@ -1,13 +1,13 @@
-import React from 'react';
+import { AuthoringUtils } from '@adobe/aem-spa-page-model-manager';
+import { yupResolver } from '@hookform/resolvers/yup';
 import {
   CoreComponentModel,
   RoutedModel,
 } from 'aem-react-core-wcm-components-base';
+import React from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import * as yup from 'yup';
-import { yupResolver } from '@hookform/resolvers/yup';
 import ChumleyButton from '@/components/ChumleyButton';
-import { AuthoringUtils } from '@adobe/aem-spa-page-model-manager';
 import './ChumleyContactForm.css';
 import classNames from 'classnames';
 
@@ -45,13 +45,12 @@ const ChumleyContactForm = ({
     email: string;
     name: string;
   }> = (data) => {
-    // eslint-disable-next-line no-alert
+    // biome-ignore lint/suspicious/noAlert: For testing purposes only
     alert(JSON.stringify(data, null, 2));
   };
 
   return (
     <div className={baseCssClass} id={id}>
-      {/* eslint-disable-next-line @typescript-eslint/no-misused-promises */}
       <form className="chumley-form" onSubmit={handleSubmit(onSubmit)}>
         <div className="chumley-form__field">
           <input

@@ -40,7 +40,7 @@ const ChumleyImage = (props: ChumleyImageProps): React.JSX.Element => {
       }
     }
   }, []);
-  return <CoreImage {...props} ref={coreImage} baseCssClass="chumley-image" />;
+  return <CoreImage {...props} baseCssClass="chumley-image" ref={coreImage} />;
 };
 
 export default ChumleyImage;

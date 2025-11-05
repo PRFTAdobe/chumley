@@ -1,1 +1,1 @@
-declare module 'aemsync';
+declare module 'aemsync'
